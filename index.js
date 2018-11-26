@@ -5,10 +5,6 @@ const port = 3000
 
 require('./server-assets/db/mlab-config')
 
-// server.get('/test', (req, res, next) => {
-//   res.status(200).send('Success')
-// })
-
 // Middleware
 server.use(express.static(__dirname + '/public'))
 server.use(bp.json())

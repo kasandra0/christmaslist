@@ -45,5 +45,16 @@ router.delete('/:id', (req, res, next) => {
       res.status(400).send(err)
     })
 })
+//Edit item /api/items/:id
+router.put('/:itemId', (req, res, next) => {
+  Item.findByIdAndUpdate(req.params.itemId, req.body, { new: true })
+    .then(item => {
+      res.send(item)
+    })
+    .catch(err => {
+      res.status(400).send(err)
+    })
+})
 
-module.exports = { router }
+
+module.exports = router

@@ -5,7 +5,7 @@ let Schema = mongoose.Schema
 let schema = new Schema({
   name: { type: String, required: true },
   img: { type: String },
-  price: { type: Number },
+  price: { type: Number, required: true },
   quantity: { type: Number, default: 1 }
 })
 
