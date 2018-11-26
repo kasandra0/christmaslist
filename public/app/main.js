@@ -1,7 +1,9 @@
+import WishlistController from "./wishlistController.js";
+
 class App {
   constructor() {
     this.controllers = {
-      // myListController: new myListController()
+      wishlistController: new WishlistController()
     }
   }
 }
