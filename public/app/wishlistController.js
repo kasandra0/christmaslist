@@ -17,11 +17,11 @@ function draw() {
   wishlist.forEach(item => {
     template += `
     <div class="col-3">
-    <div class="card" >
-      <img src="${item.img}" width="100px"/>
-      <h5>${item.name}</h5>
-      <p>$${item.price} - ${item.quantity}</p>
-    </div>
+      <div class="card" >
+        <img src="${item.img}" width="100px"/>
+        <h5>${item.name}</h5>
+       <p>$${item.price} - qty:${item.quantity}</p>
+      </div>
     </div>
     `
   });

@@ -8,7 +8,7 @@ require('./server-assets/db/mlab-config')
 // Middleware
 server.use(express.static(__dirname + '/public'))
 server.use(bp.json())
-server.use(bp.urlencoded({ extended: true }))
+server.use(bp.urlencoded({ extended: true })) // allows you to use form input as well as JSON
 
 //Register Routes
 let itemRoutes = require('./server-assets/routes/item-routes')
